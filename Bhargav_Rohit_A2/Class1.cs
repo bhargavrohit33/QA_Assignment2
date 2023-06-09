@@ -16,7 +16,7 @@ namespace Bhargav_Rohit_A2
         {
 
             [Test]
-            public void AnalyzeTriangle_ValidEquilateralTriangle_ReturnsEquilateral()
+            public void ValidEquilateralTriangle_Input5and5and5_ReturnsEquilateral()
             {
                 // Arrange
                 int firstSide = 5;
