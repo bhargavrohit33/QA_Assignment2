@@ -148,7 +148,7 @@ namespace Bhargav_Rohit_A2
                 Assert.AreEqual("The triangle is valid and is a SCALENE", result);
             }
             [Test]
-            public void ValidScaleneTriangle_Input0and3and4_ReturnsInvalid()
+            public void ZeroLengthForOneSide_Input0and3and4_ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 0;
@@ -163,7 +163,7 @@ namespace Bhargav_Rohit_A2
             }
 
             [Test]
-            public void AnalyzeTriangle_ZeroLengthForTwoSides_ReturnsInvalid()
+            public void ZeroLengthForTwoSides_Input1and0and5_ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 1;
@@ -178,7 +178,7 @@ namespace Bhargav_Rohit_A2
             }
 
             [Test]
-            public void AnalyzeTriangle_ZeroLengthForAllSides_ReturnsInvalid()
+            public void ZeroLengthForAllSides_Input0and0and0_ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 0;
@@ -192,7 +192,7 @@ namespace Bhargav_Rohit_A2
                 Assert.AreEqual("At least one side of your triangle has a zero length and is thus invalid", result);
             }
             [Test]
-            public void AnalyzeTriangle_InvalidResponse_TriangleInequalityViolation_ReturnsInvalid()
+            public void TriangleInequalityViolation_Input3and1and8__ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 3;
@@ -207,7 +207,7 @@ namespace Bhargav_Rohit_A2
             }
 
             [Test]
-            public void AnalyzeTriangle_InvalidResponse_NegativeSideLengths_ReturnsInvalid()
+            public void NegativeSideLength_Input4andminus2and5_ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 4;
@@ -222,7 +222,7 @@ namespace Bhargav_Rohit_A2
             }
 
             [Test]
-            public void AnalyzeTriangle_InvalidResponse_SumOfTwoSidesEqualsThirdSide_ReturnsInvalid()
+            public void SumOfTwoSidesEqualsThirdSide_Input6and10and4_ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 6;
@@ -236,9 +236,6 @@ namespace Bhargav_Rohit_A2
                 Assert.AreEqual("A triangle cannot be formed with those numbers", result);
             }
            
-
-
-
         }
     }
 }
