@@ -74,7 +74,81 @@ namespace Bhargav_Rohit_A2
                 Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
             }
             [Test]
-            public void AnalyzeTriangle_ZeroLengthForOneSide_ReturnsInvalid()
+            public void ValidScaleneTriangle_Input3and4and5_ReturnsScalene()
+            {
+                // Arrange
+                int firstSide = 3;
+                int secondSide = 4;
+                int thirdSide = 5;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+            }
+
+            [Test]
+            public void ValidScaleneTriangle_Input7and10and12_ReturnsScalene()
+            {
+                // Arrange
+                int firstSide = 7;
+                int secondSide = 10;
+                int thirdSide = 12;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+            }
+
+            [Test]
+            public void ValidScaleneTriangle_Input5and9and11_ReturnsScalene()
+            {
+                // Arrange
+                int firstSide = 5;
+                int secondSide = 9;
+                int thirdSide = 11;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+            }
+
+            [Test]
+            public void ValidScaleneTriangle_Input8and15and17_ReturnsScalene()
+            {
+                // Arrange
+                int firstSide = 8;
+                int secondSide = 15;
+                int thirdSide = 17;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+            }
+
+            [Test]
+            public void ValidScaleneTriangle_Input5and12and13_ReturnsScalene()
+            {
+                // Arrange
+                int firstSide = 5;
+                int secondSide = 12;
+                int thirdSide = 13;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
+            }
+            [Test]
+            public void ValidScaleneTriangle_Input0and3and4_ReturnsInvalid()
             {
                 // Arrange
                 int firstSide = 0;
@@ -161,80 +235,7 @@ namespace Bhargav_Rohit_A2
                 // Assert
                 Assert.AreEqual("A triangle cannot be formed with those numbers", result);
             }
-            [Test]
-            public void AnalyzeTriangle_ValidScaleneTriangle1_ReturnsScalene()
-            {
-                // Arrange
-                int firstSide = 3;
-                int secondSide = 4;
-                int thirdSide = 5;
-
-                // Act
-                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
-
-                // Assert
-                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
-            }
-
-            [Test]
-            public void AnalyzeTriangle_ValidScaleneTriangle2_ReturnsScalene()
-            {
-                // Arrange
-                int firstSide = 7;
-                int secondSide = 10;
-                int thirdSide = 12;
-
-                // Act
-                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
-
-                // Assert
-                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
-            }
-
-            [Test]
-            public void AnalyzeTriangle_ValidScaleneTriangle3_ReturnsScalene()
-            {
-                // Arrange
-                int firstSide = 5;
-                int secondSide = 9;
-                int thirdSide = 11;
-
-                // Act
-                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
-
-                // Assert
-                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
-            }
-
-            [Test]
-            public void AnalyzeTriangle_ValidScaleneTriangle4_ReturnsScalene()
-            {
-                // Arrange
-                int firstSide = 8;
-                int secondSide = 15;
-                int thirdSide = 17;
-
-                // Act
-                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
-
-                // Assert
-                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
-            }
-
-            [Test]
-            public void AnalyzeTriangle_ValidScaleneTriangle5_ReturnsScalene()
-            {
-                // Arrange
-                int firstSide = 5;
-                int secondSide = 12;
-                int thirdSide = 13;
-
-                // Act
-                string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
-
-                // Assert
-                Assert.AreEqual("The triangle is valid and is a SCALENE", result);
-            }
+           
 
 
 
