@@ -30,7 +30,7 @@ namespace Bhargav_Rohit_A2
                 Assert.AreEqual("The triangle is valid and is an EQUILATERAL", result);
             }
             [Test]
-            public void AnalyzeTriangle_ValidIsoscelesTriangle2_ReturnsIsosceles()
+            public void ValidIsoscelesTriangle_Input6and5and6_ReturnsIsosceles()
             {
                 // Arrange
                 int firstSide = 6;
@@ -45,7 +45,7 @@ namespace Bhargav_Rohit_A2
             }
 
             [Test]
-            public void AnalyzeTriangle_ValidIsoscelesTriangle3_ReturnsIsosceles()
+            public void ValidIsoscelesTriangle_Input9and7and7_ReturnsIsosceles()
             {
                 // Arrange
                 int firstSide = 9;
@@ -60,7 +60,7 @@ namespace Bhargav_Rohit_A2
             }
 
             [Test]
-            public void AnalyzeTriangle_ValidIsoscelesTriangle4_ReturnsIsosceles()
+            public void ValidIsoscelesTriangle_Input5and7and7_ReturnsIsosceles()
             {
                 // Arrange
                 int firstSide = 5;
